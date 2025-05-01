@@ -46,8 +46,7 @@ export default function Home() {
           date={date}
           discord={discord}
         />
-        <div className="mx-auto max-w-[1200px] flex gap-5">
-
+        <div className="mx-auto sm:max-w-[1200px] px-2 sm:px-0 flex-col sm:flex-row flex gap-5">
           <Card
             img={Card1.img}
             title={Card1.title}
