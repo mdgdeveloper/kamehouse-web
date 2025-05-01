@@ -6,6 +6,7 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat', // Optional: for Tailwind usage
   display: 'swap',
+  weight: [ '400', '500', '600', '700'], // Optional: specify weights
 });
 
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${montserrat.className} antialiased`}
       >
         {children}
       </body>
