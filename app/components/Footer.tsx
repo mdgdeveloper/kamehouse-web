@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#333', color: '#fff', padding: '1rem', textAlign: 'center' }}>
       <p>&copy; {new Date().getFullYear()} KameHouse Minecraft Server. All rights reserved.</p>
