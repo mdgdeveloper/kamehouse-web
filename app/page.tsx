@@ -16,7 +16,6 @@ export default function Home() {
   const date = "2025-05-10";
   const discord = "https://discord.com/channels/1365587302688100403/1367232798745694278";
 
-
   // Info de Card #1
 
   const Card1 = {

@@ -17,7 +17,7 @@ const MainCard = ({ img, title, text, date, discord }: Props) => {
       <div className="mx-auto max-w-[1200px]">
         <div className="flex flex-col md:flex-row gap-6 bg-stone-900 sm:px-5 px-3 rounded py-5">
           {/* Image */}
-          <div className="relative w-full md:w-1/2 h-[250px] md:h-[300px] rounded overflow-hidden">
+          <div className="flex-3/4 relative w-full md:w-1/2 h-[250px] md:h-[350px] rounded overflow-hidden">
             <Image
               src={img}
               alt="Main Card Image"

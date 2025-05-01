@@ -13,6 +13,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "KameHouse Minecraft Server",
   description: "Unete a la aventura",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
