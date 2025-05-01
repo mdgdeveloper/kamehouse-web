@@ -1,5 +1,6 @@
 import { FaDiscord } from "react-icons/fa";
 import Countdown from "./Countdown";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -13,13 +14,15 @@ const Hero = () => {
       </div>
 
       {/* Discord CTA */}
-      <div className="flex-shrink-0 py-6 px-6 sm:px-10 rounded ring-2 ring-green-500 shadow-[0_0_10px_rgba(144,238,144,0.5)] bg-green-700 hover:bg-green-600 transition duration-300 cursor-pointer text-white text-center flex flex-col justify-center items-center">
-        <div className="text-lg font-medium mb-2">Accede a nuestro server</div>
-        <div className="flex items-center gap-3 text-4xl sm:text-5xl">
-          <FaDiscord />
-          <div className="font-semibold">Discord</div>
+      <Link href="https://discord.gg/RnPtQhzv" target="_blank" rel="noopener noreferrer">
+        <div className="flex-shrink-0 py-6 px-6 sm:px-10 rounded ring-2 ring-green-500 shadow-[0_0_10px_rgba(144,238,144,0.5)] bg-green-700 hover:bg-green-600 transition duration-300 cursor-pointer text-white text-center flex flex-col justify-center items-center">
+          <div className="text-lg font-medium mb-2">Accede a nuestro server</div>
+          <div className="flex items-center gap-3 text-4xl sm:text-5xl">
+            <FaDiscord />
+            <div className="font-semibold">Discord</div>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
