@@ -12,8 +12,7 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
-  const paramsSync = await params
-  const post = await getPublicationBySlug(paramsSync.slug);
+  const post = await getPublicationBySlug(params.slug);
 
   if (!post) return notFound();
 
