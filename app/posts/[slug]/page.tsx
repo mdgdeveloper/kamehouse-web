@@ -5,14 +5,9 @@ import Image from "next/image";
 // Import styles
 import styles from "./Post.module.css"
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function Page({ params }: Props) {
-  const post = await getPublicationBySlug(params.slug);
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = await getPublicationBySlug(slug);
 
   if (!post) return notFound();
 
