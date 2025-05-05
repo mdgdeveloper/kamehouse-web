@@ -29,12 +29,22 @@ export async function getPublicationBySlug(slug: string) {
   };
 }
 
+export interface Publication {
+  slug: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    description: string;
+    image: string;
+  };
+  content: string;
+}
 
 export async function getAllPublications() {
-  const slugs = getAllSlugs();
+  const slugs = await getAllSlugs();
 
-  const posts = await Promise.all(
-    slugs.map(async (slug) => {
+  const posts: Publication[] = await Promise.all(
+    slugs.map(async (slug): Promise<Publication> => {
       const post = await getPublicationBySlug(slug);
       return post!;
     })
