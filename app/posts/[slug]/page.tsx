@@ -5,13 +5,13 @@ import Image from "next/image";
 // Import styles
 import styles from "./Post.module.css"
 
-interface PageProps {
+interface Props {
   params: {
     slug: string;
   };
 }
 
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }: Props) {
   const post = await getPublicationBySlug(params.slug);
 
   if (!post) return notFound();
