@@ -1,0 +1,33 @@
+.container p {
+  padding-bottom: 20px;
+  text-align: justify;
+  text-justify: distribute;
+  word-spacing: -0.05em;
+  text-align-last: left;
+  font-size: 1.1em;
+}
+
+.container h2 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: #22c55e;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.container h3 {
+  color: #22c55e;
+  font-family: "Press Start 2P", sans-serif;
+  border-bottom: 1px solid #22c55e;
+  font-size: 15px;
+}
+
+.container hr {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.container blockquote {
+  font-weight: 200;
+  font-size: 9px;
+  font-family: "Press Start 2P", sans-serif;
+}

@@ -1,8 +1,7 @@
-import Card from "./components/cards/Card";
-import MainCard from "./components/cards/MainCard";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Card from "@/components/cards/Card";
+import MainCard from "@/components/cards/MainCard";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 
 
@@ -30,12 +29,12 @@ export default function Home() {
     title: "Primera reunión del Conclave",
     text: "Únete a la primera reunión del Conclave, donde se discutirán los planes para el futuro del juego y se tomarán decisiones importantes.",
     date: "2025-05-10",
-    discord: "https://discord.com/channels/1365587302688100403/1367232798745694278"
+    discord: "https://discord.com/channels/1365587302688100403/1367232798745694278",
+    link: "/posts/i-conclave-de-kamehouse"
   }
 
   return (
     <div>
-      <Header />
       <Hero />
       <div className="absolute w-full">
         <MainCard
@@ -60,6 +59,7 @@ export default function Home() {
             text={Card2.text}
             date={Card2.date}
             discord={Card2.discord}
+            link={Card2.link}
           />
         </div>
         <div className="mt-10">

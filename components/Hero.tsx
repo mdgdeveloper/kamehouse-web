@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="-mt-96 z-20 relative max-w-[1250px] mx-auto flex flex-col md:flex-row gap-5 px-4 sm:px-6 items-center">
+    <div className="-mt-64 sm:-mt-72 md:-mt-96 z-20 relative max-w-[1250px] mx-auto flex flex-col md:flex-row gap-5 px-4 sm:px-6 items-center">
       {/* Countdown section */}
       <div className="flex-grow py-4 px-6 sm:px-10 rounded-lg bg-stone-900">
         <Countdown
